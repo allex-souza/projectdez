@@ -106,6 +106,18 @@ header{
     min-width: 1180px;
     padding: 25px 0;
 }
+
+#borderbb{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 422px;
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+    background-color: #fff;
+    border: 2px solid rgb(90, 90, 90);
+}
+
 #centerTitle{
     position: relative;
     display: block;
@@ -113,13 +125,13 @@ header{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     margin: 0 auto;
     text-align: center;
-    padding: 80px;
+    padding: 60px;
     border: 1px solid rebeccapurple;
     background-color: #fff;
     border: 2px solid rgb(90, 90, 90);
 }
-#centerTitle::after{
-    content: 'Aroldo Brandão Engenharia';
+/*
+#centerTitle span{
     position: absolute;
     left:50%;
     transform: translate(-50%,-50%);
@@ -130,8 +142,7 @@ header{
     background-color: transparent;
     border: 1px solid #373435;
     top: 50%;
-    z-index: -1;
-}
+}*/
 #centerTitle h1{
     font-size: 2.8rem;
     font-weight: 100;
@@ -151,8 +162,8 @@ header{
     border: none;
     color: white;
     margin: 20px auto 0 auto;
-    z-index: 10;
     cursor: pointer;
+    z-index: 10;
 }
 main{
     position: relative;
