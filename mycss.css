@@ -130,7 +130,7 @@ header{
     background-color: transparent;
     border: 1px solid #373435;
     top: 50%;
-    z-index: 2;
+    z-index: -1;
 }
 #centerTitle h1{
     font-size: 2.8rem;
@@ -151,6 +151,8 @@ header{
     border: none;
     color: white;
     margin: 20px auto 0 auto;
+    z-index: 10;
+    cursor: pointer;
 }
 main{
     position: relative;
@@ -196,6 +198,7 @@ button{
     border: none;
     color: white;
     margin: 30px auto 0 auto;
+    cursor: pointer;
 }
 
 footer{
