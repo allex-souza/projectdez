@@ -1,0 +1,157 @@
+@charset "utf8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 1180px;
+    z-index: 2;
+    top: 0;
+    background-color: white;
+}
+/*
+#contraOcup{
+    position: relative;
+    display: block;
+    width: 100%;
+
+}*/
+
+#headerXbox{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+#headerYbox{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#imgbox{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#imgbox img{
+    position: relative;
+    display: block;
+    width:180px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#laingNav{
+    position: relative;
+}
+
+#laingNav, #imgbox{
+    flex: 1 1 1;
+    justify-content: space-between;    
+}
+#cxnav{
+    display: flex;
+    position: relative;
+    height: 50px;
+    top: 50%;
+    transform: translate(0,-50%);
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#laingNav img{
+    width: 40px;
+    border-radius: 5px;
+}
+
+#divIcons{
+    flex: 1 1 1 ;
+    position: relative;
+    justify-content: flex-end;
+    margin: 15px;
+    
+}
+#divIcons h3{
+    color: black;
+}
+
+#capaPinc{
+    position: relative;
+    display: block;
+    background-color: #ddd;
+    color: #373435;
+    width: 100%;
+    min-width: 1180px;
+
+}
+#centerTitle{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px;
+}
+#centerTitle h2{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+#centerTitle h3{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+#centerTitle button{
+    background-color:#C64041;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 20px auto 0 auto;
+}
+main{
+    position: relative;
+    display: block;
+}
+article{
+    background-color: #ffffff;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+#aling-y-x-geral{
+    display: flex;
+}
+article h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #373435;
+    margin: 0 0 20px auto;
+}
+article img{
+    width: 35%;
+}
+article p{
+    font-size: 1.3rem;
+    color: #373435;
+    padding: 10px;
+    letter-spacing: 0.01rem;
+}
+button{
+    
+    background-color:#C64041;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 30px auto 0 auto;
+}
