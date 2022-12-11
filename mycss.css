@@ -8,11 +8,11 @@ header{
     position: relative;
     display: block;
     width: 100%;
-    min-width: 1180px;
     z-index: 2;
     top: 0;
     background-color: white;
 }
+
 /*
 #contraOcup{
     position: relative;
@@ -38,7 +38,7 @@ header{
 }
 
 #headerXbox{
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
 }
 #headerYbox{
@@ -103,7 +103,6 @@ header{
     background-color:#373435;
     color: #727473;
     width: 100%;
-    min-width: 1180px;
     padding: 25px 0;
 }
 
@@ -170,7 +169,7 @@ main{
 }
 article{
     background-color: #ffffff;
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     padding: 70px;
 }
