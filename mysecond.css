@@ -1,10 +1,71 @@
 @charset "utf-8";
-header{
-    position: relative;
-    display: block;
+#headerYbox{
+    height: 300px;
     width: 100%;
-    min-width: 1180px;
-    z-index: 2;
-    top: 0;
-    background-color: red;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#imgbox img{
+    width:500px;
+}
+#laingNav{
+    display: none;
+}
+
+
+#borderbb{
+    width: 1000px;
+    padding: 10px;
+}
+
+#centerTitle{
+    width: 874px;
+}
+
+#centerTitle h1{
+    font-size: 6rem;
+}
+#centerTitle h3{
+    font-size: 3rem;
+}
+#centerTitle button{
+    font-size: 3.5rem;
+    padding: 35px 70px;
+    border-radius: 80px;
+}
+
+
+
+#aling-y-x-geral{
+    display: block;
+}
+
+
+article h2{
+    font-size: 5rem;
+}
+article img{
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 10px 10px #585a4b;
+}
+article p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto auto 80px auto;
+    font-size: 3rem;
+    color: #373435;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+}
+button{
+    font-size: 3.5rem;
+    padding: 35px 70px;
+    border-radius: 80px;
+    margin: 90px auto 40px auto;
+}
+footer{
+    font-size: 2.6rem;
 }
