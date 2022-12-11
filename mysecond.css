@@ -66,6 +66,9 @@ button{
     border-radius: 80px;
     margin: 90px auto 40px auto;
 }
+#flut-wp{
+    width: 13%;
+}
 footer{
     font-size: 2.6rem;
 }
