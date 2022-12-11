@@ -154,7 +154,7 @@ header{
     text-transform: uppercase;
 }
 #centerTitle button{
-    background-color:#585a4b;
+    background-color:#07773D;
     font-size: 1.06rem;
     font-weight: bolder;
     padding: 13px 40px;
@@ -201,7 +201,7 @@ article p{
 }
 button{
     
-    background-color:#585a4b;
+    background-color:#07773D;
     font-size: 1.06rem;
     font-weight: bolder;
     padding: 13px 40px;
@@ -224,3 +224,4 @@ footer{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif !important;
     min-width: 1180px;  
 }
+
