@@ -26,19 +26,19 @@ header{
     display: block;
     z-index: 5;
     width: 5.5%;
-    box-shadow:0px 0px 8px #fff,  0px 0px 15px #37DD54;
-    border-radius: 20%;
+    box-shadow:0vmax 0vmax 1vmax #fff,  0vmax 0vmax 5vmax #37DD54;
+    border-radius: 1vmax;
     bottom: 20px;
     right: 20px;
     animation: mymove 2s infinite;
 }
 @keyframes mymove {
-    25% {box-shadow: 0px 0px 0px #37DD54;}
-    50% {box-shadow: 0px 0px 15px #37DD54;}
+    25% {box-shadow: 0vmax 0vmax 0vmax #37DD54;}
+    50% {box-shadow: 0vmax 0vmax 1vmax #37DD54;}
 }
 
 #headerXbox{
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
 }
 #headerYbox{
@@ -128,40 +128,15 @@ header{
     background-color: #fff;
     border: 2px solid rgb(90, 90, 90);
 }
-/*
-#centerTitle span{
-    position: absolute;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color: transparent;
-    display: block;
-    width: 95%;
-    height: 95%;
-    background-color: transparent;
-    border: 1px solid #373435;
-    top: 50%;
-}*/
 #centerTitle h1{
-    font-size: 2.8rem;
+    font-size: 3.5vmax;
     font-weight: 100;
 }
 #centerTitle h3{
     margin-top: 10px;
-    font-size: .9rem;
+    font-size: 1.3vmax;
     font-weight: 100;
     text-transform: uppercase;
-}
-#centerTitle button{
-    background-color:#07773D;
-    font-size: 1.06rem;
-    font-weight: bolder;
-    padding: 13px 40px;
-    border-radius: 50px;
-    border: none;
-    color: white;
-    margin: 20px auto 0 auto;
-    cursor: pointer;
-    z-index: 10;
 }
 main{
     position: relative;
@@ -169,7 +144,7 @@ main{
 }
 article{
     background-color: #ffffff;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     padding: 70px;
 }
@@ -178,7 +153,7 @@ article{
     display: flex;
 }
 article h2{
-    font-size: 2.8rem;
+    font-size: 3.5vmax;
     font-weight: 700;
     color: #585a4b;
     text-shadow: 0px 0px 3.5px #fff, 0px 0px 4px rgba(146, 146, 146, 0.849);
@@ -192,7 +167,7 @@ article img{
 }
 article p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6vmax;
     color: #373435;
     padding: 10px 30px 10px 0;
     letter-spacing: 0.019rem;
@@ -200,7 +175,7 @@ article p{
 button{
     
     background-color:#07773D;
-    font-size: 1.06rem;
+    font-size: 1.4vmax;
     font-weight: bolder;
     padding: 13px 40px;
     border-radius: 50px;
