@@ -1,291 +1,202 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <link rel="stylesheet" href="mycss.css">
-    <link rel="shortcut icon" href="incon-aroldo-brandao.png" type="image/x-icon">
-    <link rel="stylesheet" media="(max-width: 800px)" href="ysecond.css" />
-    <title>Aroldo Brandão Engenharia</title>
-</head>
-<body>
-    <!--
-    <header id="contraOcup">
-        <div id="headerXbox">
-            <div id="headerYbox">
-                <div id="imgbox">
-                    <img src="/imgs/logo.png" alt="">
-                </div>
-                    <nav id="laingNav">
-                        <div id="cxnav">
-                        <div id="divIcons">
-                            <h3>Contato</h3>
-                        </div>
-                        <div id="divIcons">
-                            <h3>Sobre</h3>
-                        </div>
-                        <div id="divIcons">
-                            <img src="/imgs/imguni.png" alt="">
-                        </div>
-                        <div id="divIcons">
-                            <img src="/imgs/imguni.png" alt="">
-                        </div>
-                    </div>
-                </nav>
-                
-            </div>
-        </div>
-    </header>-->
-    <img id="flut-wp" src="whatsapp-flut.png" alt="">
-    <header>
-        <div id="headerXbox">
-            <div id="headerYbox">
-                <div id="imgbox">
-                    <img src="logo-02.png" alt="">
-                </div>
-                    <nav id="laingNav">
-                        <div id="cxnav">
-                        <div id="divIcons">
-                            <h3>Contato</h3>
-                        </div>
-                        <div id="divIcons">
-                            <img src="whatsapp.png" alt="">
-                        </div>
-                        <div id="divIcons">
-                            <img src="intagram.png" alt="">
-                        </div>
-                    </div>
-                </nav>
-                
-            </div>
-        </div>
-    </header>
-    <div id="capaPinc">
-        <div id="borderbb">
-            <div id="centerTitle">
-                <span></span>
-                <h1>LAUDOS E <br> VISTORIAS</h1>
-                <h3>Conheça nossos serviços abaixo</h3>
-                <button onclick="openwpp()" >Entre em contato agora</button>
-            
-            </div>
-        </div>
-    </div>
+@charset "utf8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    background-color: white;
+}
 
+/*
+#contraOcup{
+    position: relative;
+    display: block;
+    width: 100%;
 
-    <main id="main-section-bacground">
-        <article>
-                <h2>Inspeção Predial</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-                        
-                        A inspeção predial é uma ferramenta essencial para os síndicos e administradores de condomínio. <br><br>
+}*/
 
-                        Ficar irregular com as inspeções prediais obrigatórias (determinadas por lei, baseado na idade do imóvel) pode acarretar responsabilidade penal.<br><br>
-                        
-                        Tem como objetivo constatar irregularidades na edificação e falhas no sistema de manutenção, bem como avaliar problemas a serem resolvidos.<br><br>
-                        
-                        É realizada vistoria técnica e entregue um laudo que identifica o estado geral da edificação e dos sistemas construtivos, observando o desempenho, vida útil, funcionalidade, estado de conservação, segurança, manutenção e operação considerando as expectativas do usuário.<br><br>
-                        
-                        Orientamos quanto às medidas a serem tomadas de acordo com suas respectivas prioridades, trazendo segurança, durabilidade e valorização à edificação, evitando gastos desnecessários.
-                    </p>
+#flut-wp{
+    position: fixed;
+    display: block;
+    z-index: 5;
+    width: 5.5%;
+    box-shadow:0vmax 0vmax 1vmax #fff,  0vmax 0vmax 5vmax #37DD54;
+    border-radius: 1vmax;
+    bottom: 20px;
+    right: 20px;
+    animation: mymove 2s infinite;
+}
+@keyframes mymove {
+    25% {box-shadow: 0vmax 0vmax 0vmax #37DD54;}
+    50% {box-shadow: 0vmax 0vmax 1vmax #37DD54;}
+}
 
-                    <img src="inspeçãopredial.png" alt="">
+#headerXbox{
+    width: 80vmax;
+    margin: 0 auto;
+}
+#headerYbox{
+    height: 8vmax;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#imgbox{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#imgbox img{
+    position: relative;
+    display: block;
+    width:11.5vmax;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#laingNav{
+    position: relative;
+}
 
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
+#laingNav, #imgbox{
+    flex: 1 1 1;
+    justify-content: space-between;    
+}
+#cxnav{
+    display: flex;
+    position: relative;
+    height: 50px;
+    top: 50%;
+    transform: translate(0,-50%);
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#laingNav img{
+    width: 4vmax;
+    border-radius: .7vmax;
+}
 
+#divIcons{
+    flex: 1 1 1 ;
+    position: relative;
+    justify-content: flex-end;
+    margin: .7vmax;
+    
+}
+#divIcons h3{
+    color: #373435;
+    font-size: 1.8vmax;
+}
 
-    <main style="background-color:#ddd ;" id="main-section-bacground">
-        <article style="background-color:#ddd">
-                <h2>Vistoria Cautelar de Vizinhança</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-                        A vistoria cautelar de vizinhança é uma ferramenta fundamental para
-                        construtores e incorporadores evitarem problemas futuros. <br><br>
-                        O momento ideal para contratação é antes de iniciar a obra, evitando qualquer
-                        possível reclamação que implique em perdas nanceiras.<br><br>
-                        Trata-se de uma vistoria dos imóveis vizinhos à obra nova, documentando o
-                        estado de conservação do imóvel e defeitos construtivos preexistentes.<br><br>
-                        A contratação desse serviço pela construtora mostra a intenção de uma
-                        “política de boa vizinhança”, trazendo conança para os moradores da região
-                    </p>
+#capaPinc{
+    position: relative;
+    display: block;
+    background-color:#373435;
+    color: #727473;
+    width: 100%;
+    padding: 1.2vmax 0;
+}
 
-                    <img src="cautelar de vizinhança.png" alt="">
+#borderbb{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 31vmax;
+    padding: .8vmax;
+    background-color: #fff;
+    border: 2px solid rgb(90, 90, 90);
+}
 
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
+#centerTitle{
+    position: relative;
+    display: block;
+    width: 22vmax;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4vmax;
+    border: .3vmax solid rebeccapurple;
+    background-color: #fff;
+    border: .2vmax solid rgb(90, 90, 90);
+}
+#centerTitle h1{
+    font-size: 3.5vmax;
+    font-weight: 100;
+}
+#centerTitle h3{
+    margin-top: 1vmax;
+    font-size: 1.3vmax;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+main{
+    position: relative;
+    display: block;
+    
+}
+article{
+    background-color: #ffffff;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5vmax;
+}
 
-    <main id="main-section-bacground">
-        <article>
-                <h2>Inspeção de Anomalias Construtivas</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
+#aling-y-x-geral{
+    display: flex;
+}
+article h2{
+    font-size: 3.5vmax;
+    font-weight: 700;
+    color: #585a4b;
+    text-shadow: 0px 0px 3.5px #fff, 0px 0px 4px rgba(146, 146, 146, 0.849);
+    margin: 0 0 2vmax auto;
+}
+article img{
+    width: 30vmax;
+    height: 20vmax;
+    border-radius: 20px;
+    box-shadow: 10px 10px #585a4b;
+}
+article p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6vmax;
+    color: #373435;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+}
+button{
+    
+    background-color:#07773D;
+    font-size: 1.4vmax;
+    font-weight: bolder;
+    padding: 1vmax 3vmax;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 3vmax auto 0 auto;
+    cursor: pointer;
+}
 
-                        Anomalias construtivas podem ser consequências de problemas em diferentes etapas de uma edificação: projeto, execução, uso ou manutenção. <br><br>
+footer{
+    background-color: #373435;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 2vmax 0;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    font-size: 1.2vmax;
+    font-weight: 100 !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif !important;
+}
 
-                        Este laudo tem o objetivo de encontar as causas e e também as consequências de tais problemas construtivos, até mesmo em partes de difícil acesso/manutenção, para que se possa atribuir corretamente a responsabilidade pelos danos observados. <br><br>
-                        
-                        Analisa-se qual o grau de risco que as anomalias podem apresentar e qual a necessidade de urgência para seus reparos. 
-
-                    </p>
-
-                    <img src="anomalias contrut.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-
-
-    <main style="background-color:#ddd ;" id="main-section-bacground">
-        <article style="background-color:#ddd">
-                <h2>Vistoria de Entrega de Obras</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-
-                        Essencial para construtoras e incorporadoras finalizando suas obras. <br><br> Documentamos as condições do imóvel no momento de entrega, fazendo a vistoria total do edifício e fornecendo o laudo técnico para ou auxiliar na correção de problemas, ou para que a empresa se resguarde jurídicamente de qualquer problema futuro.
-
-                    </p>
-
-                    <img src="entrega de obra.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-
-    <main id="main-section-bacground">
-        <article>
-                <h2>Vistoria de Entrega de Chaves</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-                        A vistoria de entrega de chaves, é uma ferramenta importantíssima para administradores de condomínios e proprietários de construções novas. <br><br>
-
-                        A elaboração deste relatório ocorre na hora da transferência do imóvel do construtor ou incorporador para o cliente final, identificando inconformidades com as normas técnicas, com os padrões de qualidade e com o contrato firmado entre as partes.<br><br>
-                        
-                        Durante a vistoria detecta-se o estado da construção em geral, como o caimento dos ralos, elementos estruturais aparentes, instalação hidráulica e elétrica, etc…<br><br>
-                        
-                        O objetivo é assegurar ao cliente final, que este está comprando um imóvel sem vícios construtivos, de forma que não venha a causar problemas futuros e ter que reformar ou corrigir anomalias que foram entregues pela construtora.
-
-                    </p>
-
-                    <img src="entrega de chave.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-
-
-    <main style="background-color:#ddd ;" id="main-section-bacground">
-        <article style="background-color:#ddd">
-                <h2>Assistência Técnica Judicial</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-                        Este serviço pode ser utilizado em casos judiciais a fim de esclarecer os fatos alegados pelas partes que compõe o processo. <br><br> A perícia judicial serve para apurar as informações que dependem de conhecimento técnico, e tem como finalidade esclarecer os detalhes que levaram ao processo.
-
-                    </p>
-
-                    <img src="assistênciatec-juducial.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-    <main id="main-section-bacground">
-        <article>
-                <h2>Vistoria Locativa</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-                        Vai alugar um imóvel? Seja você o locador ou locatário, a vistoria locativa é essencial para você não ter problemas futuros. <br><br>
-
-                        Ela pode ser contratada por ambas as partes, e tem por objetivo registrar o estado do imóvel no início (e também no final) do período de locação. São realizadas observações criteriosas, que resultarão em um documento técnico que servirá como materialização e comprovação das condições do bem, garantindo com precisão o estado do imóvel no ato da locação.<br><br>
-                        
-                        É uma forma imparcial e técnica de assegurar que ambas as partes estão cientes da condição do imóvel no momento da contratação, evitando, desta forma, que existam eventuais disputas sobre danos ou prejuízos não constatados previamente.
-                        <br><br>
-                        O locador se assegura de que o imóvel deverá ser devolvido nas mesmas condições iniciais fornecidas, e o locatário se assegura de que está entrando em um imóvel em boas condições de uso.
-
-                    </p>
-
-                    <img src="vist-locativa.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-
-
-    <main style="background-color:#ddd ;" id="main-section-bacground">
-        <article style="background-color:#ddd">
-                <h2>Gestão de Obras e Reformas</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-
-                        Passamos, um a um, dos itens de projeto com a equipe de execução da obra e fazemos visitas semanais para garantir que tudo está seguindo conforme planejado! <br><br>
-
-                        Assim, garantimos que a obra vai ser executada devidamente, de acordo com tudo o que foi planejado na etapa de projeto.
-                    </p>
-
-                    <img src="Gestão de Obras e Reformas.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-    <main id="main-section-bacground">
-        <article>
-                <h2>Execução de Obras e Reformas</h2>
-                <div id="aling-y-x-geral">
-                    
-                    <p id="alingy-x-desk">
-
-                        Garantimos TUDO para você! Fazemos a pesquisa de fornecedores, gerenciamos a mão de obra e a entrega de materiais e seremos responsáveis técnicos pela execução das obras. <br><br>
-
-                        Neste formato as visitas na obra são mais frequentes, conforme demanda de necessidades.
-
-                    </p>
-
-                    <img src="Execução de Obras e Reformas.png" alt="">
-
-                </div>
-                
-                <button onclick="openwpp()">Entre em contato agora</button>
-        </article>
-    </main>
-
-    <footer>
-        <h4>Aroldo Brandão Engenharia</h4>
-        <h5>Copyright © 2023 Todos os Direitos Reservados</h5>
-        <h5>Política de Privacidade</h5>
-    </footer>
-</body>
-
-<script>
-    function openwpp() {
-        open("https://api.whatsapp.com/send?phone=5562981840494" ,'',"width=1px, height=1px")
-    }
-</script>
-
-</html>
