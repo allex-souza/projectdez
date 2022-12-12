@@ -13,7 +13,9 @@
 #laingNav{
     display: none;
 }
-
+header{
+    min-width: none;
+}
 
 #borderbb{
     width: 1000px;
