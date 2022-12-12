@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="mycss.css">
     <link rel="shortcut icon" href="incon-aroldo-brandao.png" type="image/x-icon">
     <link rel="stylesheet" media="(max-width: 1300px)" href="mysecond.css" />
@@ -286,7 +286,10 @@
     function openwpp() {
         open("https://api.whatsapp.com/send?phone=5562981840494" ,'',"width=1px, height=1px")
     }
-    window.document.body.style.zoom = "-1000%"
+    var scale = 'initial-scale(0)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
 </script>
 
 </html>
