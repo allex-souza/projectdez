@@ -7,9 +7,8 @@
     flex-direction: row;
     justify-content: center;
 }
-#imgbox img{
-    width:500px;
-}
+
+
 #laingNav{
     display: none;
 }
@@ -18,14 +17,14 @@ header{
 }
 
 #borderbb{
-    width: 1000px;
+    width: 80%;
     padding: 10px;
 }
 
 #centerTitle{
-    width: 874px;
+    width: 50%;
 }
-
+/*
 #centerTitle h1{
     font-size: 6rem;
 }
@@ -37,7 +36,7 @@ header{
     padding: 35px 70px;
     border-radius: 80px;
 }
-
+*/
 
 
 #aling-y-x-geral{
