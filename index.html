@@ -47,18 +47,18 @@
                     <nav id="laingNav">
                         <div id="cxnav">
                         <div id="divIcons">
-                            <h3>Contato</h3>
+                            <h3  id="cursor-ativ" >Contato</h3>
                         </div>
                         <div id="divIcons">
-                            <img src="whatsapp.png" alt="">
+                            <img id="cursor-ativ" onclick="openwpp()" src="whatsapp.png" alt="">
                         </div>
                         <div id="divIcons">
-                            <img src="intagram.png" alt="">
+                            <img id="cursor-ativ" onclick="openIg()" src="intagram.png" alt="">
                         </div>
                     </div>
                 </nav>
                 
-            </div>
+            </div> 
         </div>
     </header>
     <div id="capaPinc">
@@ -286,10 +286,13 @@
     function openwpp() {
         open("https://api.whatsapp.com/send?phone=5562981840494" ,'',"width=1px, height=1px")
     }
+    function openIg() {
+        open("https://www.instagram.com/aroldobrandao_engenharia/")
+    }
     var scale = 'initial-scale(0)';
-document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
- document.body.style.msTransform =   scale;       // IE 9
- document.body.style.transform = scale;     // General
-</script>
+    document.body.style.webkitTransform =  scale;
+    document.body.style.msTransform =   scale;
+    document.body.style.transform = scale;
+</script> 
 
 </html>
